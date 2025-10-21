@@ -48,11 +48,6 @@
     <!-- Needed to query user associated with a subscription. -->
     <uses-permission android:name="android.permission.MANAGE_SUBSCRIPTION_USER_ASSOCIATION"/>
 
-    <overlay
-        android:targetPackage="com.android.providers.telephony"
-        android:requiredSystemPropertyName="ro.boot.vendor.qspa.modem"
-        android:requiredSystemPropertyValue="enabled"/>
-
     <application android:process="com.android.phone"
                  android:allowClearUserData="false"
                  android:fullBackupOnly="true"
